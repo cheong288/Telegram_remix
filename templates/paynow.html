@@ -7,16 +7,16 @@
         <h2>Transfer Money</h2>
         <input type="text" id="payer" placeholder="Enter Payer Address">
         <input type="text" id="payee" placeholder="Enter Payee Address">
-        <input type="number" id="amount" placeholder="Enter Amount to transfer">
-        <button class="btn" onclick="transfer()">Transfer Money</button>
-        <button class="btn" onclick="transaction()">View Transaction</button>
+        <input type="text" id="amount" placeholder="Enter Amount to transfer">
+        <button onclick="transfer()">Transfer Money</button>
+        <button onclick="transaction()">View Transaction</button>
         <p id="view_payer"></p>
         <p id="view_payee"></p>
         <p id="view_amount"></p>
         
-        <form action="/paynow" method="post">     
-            <input type="submit" value="Main">
-        </form>
+		<a href="/index">
+        	<button type="button">Back to Index</button>
+    	</a>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/web3@1.5.2/dist/web3.min.js"></script>
     <script>
@@ -96,4 +96,5 @@
             document.getElementById("view_amount").innerText = "amount :" + result[2];
         }
     </script>
+
 </body>
