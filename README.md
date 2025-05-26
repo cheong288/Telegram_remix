@@ -1,1 +1,1 @@
-# Telegram_remix
+# SQlite, Telegram, remix, Gemini
